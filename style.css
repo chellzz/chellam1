@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+nav.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.first-links {
+    display: flex;
+    padding: 20px;
+    column-gap: 20px;
+}
+.first-links a {
+    text-decoration: none;
+    color: #1D232c;
+}
+.first-links a:hover {
+    text-decoration: underline;
+    color: #1D232c;
+}  
+.secs {
+    display: none;
+}
+.sidelinks {
+    background-color: #1D232c;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: left 0.3s;
+}
+.side-links {
+    margin-bottom: 30px;
+}
+.side-links a {
+    text-decoration: none;
+    color: white;
+} 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+}
+.content {
+    max-width: 60%;
+}
+.icons {
+    margin-top: 10px;
+}
+.icons a {
+    text-decoration: none;
+    color: #1D232c;
+    margin-right: 15px;
+    font-size: 24px;
+}
+.profile-img img {
+    text-align: center;
+}
+.title {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* About Section */
+#about {
+    padding: 40px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+#about h2 {
+    margin-bottom: 20px;
+}
+#about p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Skills Section */
+#skills {
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+#skills h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#skills ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#skills li {
+    background: #1D232c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px 20px;
+}
+#projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.project {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background: #1D232c;
+    color: white;
+}
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#contact p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#contact a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Media query*/
+@media screen and (max-width: 700px) {
+    .secs {
+        display: block;
+    }
+    .first-links {
